@@ -75,7 +75,7 @@ export default function Signin() {
             
             <div className="mt-6 text-center">
               <p className="text-sm">
-                Don't have an account yet? &nbsp;
+                Don&apos;t have an account yet? &nbsp;
                 <Link href="/signup" passHref>
                   <button className="text-gray-800 hover:text-gray-700 font-medium">Sign up</button> 
                   </Link>
