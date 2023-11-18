@@ -11,7 +11,7 @@ export default function Form() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
+          transition={{ duration: 1, delay: 0.1 }}
           className="max-w-lg  mx-auto  md:mr-0"
         >
           <motion.p className="text-white text-3xl font-semibold sm:text-4xl hidden md:block">

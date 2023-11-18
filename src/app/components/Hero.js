@@ -20,13 +20,13 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 1, delay: 0.1 }}
         className="container mx-auto text-center z-10"
       >
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
+          transition={{ duration: 1, delay: 0.3 }}
           className="text-6xl md:text-6xl font-bold tracking-tight"
         >
           Transform your business with Synergy
@@ -35,7 +35,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 1, delay: 0.5 }}
           className="text-xl mt-16 font-medium mx-auto px-4"
         >
           Revolutionize your workflow with our AI-driven omnichannel solution.{" "}
@@ -47,7 +47,7 @@ export default function Hero() {
           <motion.button
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8 }}
+            transition={{ duration: 1, delay: 0.7 }}
             className="bg-white text-gray-800 mt-16 md:mt-20 py-3 px-6 rounded-lg font-semibold shadow-lg hover:shadow-xl"
           >
             Get started
@@ -56,7 +56,7 @@ export default function Hero() {
         <motion.button
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
+          transition={{ duration: 1, delay: 0.9 }}
           className=" text-gray-100 mt-16 md:mt-20 py-3 px-6 rounded-lg font-semibold "
           onClick={scrollToFeatures}
         >
