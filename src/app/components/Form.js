@@ -46,7 +46,7 @@ export default function Form() {
         <motion.form
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
+          transition={{ duration: 1, delay: 0.2 }}
           onSubmit={(e) => e.preventDefault()}
           className="mt-4 md:mt-12 mx-auto p-8 bg-white w-4/5 md:w-2/6 rounded-xl z-10" 
 
