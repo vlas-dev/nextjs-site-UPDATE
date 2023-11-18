@@ -10,12 +10,7 @@ export default function CallToAction() {
   };
 
   return (
-    <motion.section
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      className="relative flex flex-col items-center justify-center h-[60vh] text-white"
-    >
+    <motion.section className="relative flex flex-col items-center justify-center h-[60vh] text-white">
       <ParticlesBackground />
 
       <div
@@ -27,21 +22,21 @@ export default function CallToAction() {
       ></div>
 
       <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
         className="absolute inset-0 flex flex-col items-center justify-center"
       >
-        <h2 className="text-3xl font-bold mb-4">Ready to try Synergy?</h2>
+        <h2 className="text-3xl font-bold ">Ready to try Synergy?</h2>
         <Link href="/signin" passHref>
-        <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="bg-white text-gray-800 mt-16 md:mt-20 py-3 px-6 rounded-lg font-semibold shadow-lg hover:shadow-xl"
-        >
-          Get started
-        </motion.button>
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="bg-white text-gray-800 mt-8 py-3 px-6 rounded-lg font-semibold shadow-lg hover:shadow-xl"
+          >
+            Get started
+          </motion.button>
         </Link>
       </motion.div>
     </motion.section>

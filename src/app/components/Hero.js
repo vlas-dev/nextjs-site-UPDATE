@@ -38,19 +38,20 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.6 }}
           className="text-xl mt-16 font-medium mx-auto px-4"
         >
-          Revolutionize your workflow with our AI-driven omnichannel solution. <br />
+          Revolutionize your workflow with our AI-driven omnichannel solution.{" "}
+          <br />
           Integrate multiple platforms into one seamless experience.
         </motion.p>
-        
+
         <Link href="/signin" passHref>
-        <motion.button
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="bg-white text-gray-800 mt-16 md:mt-20 py-3 px-6 rounded-lg font-semibold shadow-lg hover:shadow-xl"
-        >
-          Get started
-        </motion.button>
+          <motion.button
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="bg-white text-gray-800 mt-16 md:mt-20 py-3 px-6 rounded-lg font-semibold shadow-lg hover:shadow-xl"
+          >
+            Get started
+          </motion.button>
         </Link>
         <motion.button
           initial={{ opacity: 0, y: 20 }}
