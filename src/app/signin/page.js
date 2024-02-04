@@ -30,7 +30,7 @@ export default function Signin() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.1 }}
-          className="mb-20 mx-auto p-8 bg-white w-4/5 lg:w-2/6 rounded-xl z-10"
+          className="mb-20 mx-auto p-8 bg-white w-4/5 md:w-2/4 lg:w-2/6 rounded-xl z-10"
           >
           <h2 className="text-2xl font-semibold mb-4 text-gray-800 text-center">Sign in to your account</h2>
           <form onSubmit={handleSignin}>
@@ -54,8 +54,8 @@ export default function Signin() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="flex flex-col md:flex-row md:justify-between items-center mb-6">
-              <div className="flex items-center mb-5 md:mb-0">
+            <div className="flex flex-col items-center mb-6">
+              <div className="flex items-center mb-3">
                 <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" />
                 <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">
                   Remember me

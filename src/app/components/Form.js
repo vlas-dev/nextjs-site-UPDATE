@@ -12,7 +12,7 @@ export default function Form() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.1 }}
-          className="max-w-lg  mx-auto  lg:mr-0 mb-10"
+          className="max-w-lg  mx-auto  lg:mr-0 mb-5 lg:mb-40"
         >
           <motion.p className="text-white text-3xl font-semibold sm:text-4xl hidden lg:block">
             Get in touch
@@ -22,7 +22,7 @@ export default function Form() {
             feedback, please don&apos;t hesitate to reach out using the form
             below. Our team will get back to you as soon as possible.
           </motion.p>
-          <motion.div className="flex mt-10 lg:mt-5 mb-3 space-x-4">
+          <motion.div className="flex mt-5 space-x-4">
             <motion.a
               href="https://whatsapp.com/"
               className="text-gray-500 hover:text-gray-200 z-10"
@@ -48,7 +48,7 @@ export default function Form() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           onSubmit={(e) => e.preventDefault()}
-          className="lg:mt-4  mx-auto p-8 bg-white w-4/5 lg:w-2/6 rounded-xl z-10 mb-10" 
+          className="lg:mt-4  mx-auto p-8 bg-white w-4/5 md:w-2/4 lg:w-2/6 rounded-xl z-10 mb-20" 
 
         >
           <h2 className="text-2xl font-semibold mb-4 text-gray-800 text-center">Contact us</h2>
@@ -85,7 +85,7 @@ export default function Form() {
             <label className="font-medium">Message</label>
             <textarea
               required
-              className="w-full h-20 md:h-36 px-3 py-2  resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+              className="w-full h-20 md:h-24 px-3 py-2  resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
               placeholder="Enter your message here..."
             ></textarea>
           </div>

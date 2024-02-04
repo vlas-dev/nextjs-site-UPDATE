@@ -39,7 +39,7 @@ export default function SignUp() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.1 }}
-          className="mb-20 mx-auto p-8 bg-white w-4/5 lg:w-2/6 rounded-xl z-10"
+          className="mb-20 mx-auto p-8 bg-white w-4/5 md:w-2/4 lg:w-2/6 rounded-xl z-10"
         >
           <h2 className="text-2xl font-semibold mb-4 text-gray-800 text-center">
             Create your account
