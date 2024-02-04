@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-gray-100 text-gray-900 py-8 ">
+    <footer className="bg-gray-100 text-gray-900 py-8 w-screen">
       <div className=" mx-auto px-4">
         <div className="flex justify-center mb-6">
           <Link href="/terms">
@@ -13,22 +13,23 @@ function Footer() {
             <span className="mx-4 text-base hover:text-gray-100">Privacy</span>
           </Link>
         </div>
-        <div className="flex justify-center space-x-4 text-gray-400">
-          <p className="flex justify-center items-center">
-            <FaMapMarkerAlt className="mr-2" />
-            Address: 123 Business Street, City, Country
-          </p>
-          <p className="flex justify-center items-center">
+        <div className="flex flex-col lg:flex-row justify-center lg:space-x-4 text-gray-400">
+         
+          <p className="flex items-center mx-auto lg:mx-0">
             <FaEnvelope className="mr-2" />
-            Email: support-email@synergy.com
+            support-email@synergy.com
           </p>
-          <p className="flex justify-center items-center">
+          <p className="flex items-center mx-auto lg:mx-0">
+            <FaMapMarkerAlt className="mr-2" />
+            123 Street, City, Country
+          </p>
+          <p className="flex  items-center mx-auto lg:mx-0">
             <FaPhoneAlt className="mr-2" />
-            Phone: +1 (123) 456-7890
+            +1 (123) 456-7890
           </p>
         </div>
         <p className="mt-6 text-gray-500 text-sm text-center">
-          © 2023 Synergy, LLC.
+          © 2024 Synergy, LLC.
         </p>
       </div>
     </footer>

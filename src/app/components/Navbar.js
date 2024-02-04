@@ -1,9 +1,10 @@
+"use client"
+
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image"; 
 import logoImage from "../assets/synrg.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -31,7 +32,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-100 p-3 z-50 border-b border-gray-300">
+    <nav className="sticky top-0 left-0 w-full bg-gray-100 p-3 z-50 border-b border-gray-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="text-xl font-semibold">
           <Link href="/" passHref>
@@ -58,7 +59,7 @@ export default function Navbar() {
             </Link>
             <Link href="/signin" passHref>
               <button className="bg-gray-800 text-white py-2 px-4 rounded-lg font-semibold">
-              Sign in
+                Sign in
               </button>
             </Link>
           </div>
@@ -137,28 +138,28 @@ export default function Navbar() {
             )}
           </button>
 
-           {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-16 right-0 bg-white w-48 border rounded-lg text-center">
-          <div className="flex flex-col space-y-4 p-4">
-            <Link href="/" passHref>
-              <button
-                className={`hover:text-gray-800 ${pathname === "/" ? "border-b-2 border-blue-950" : ""}`}
-              >
-                Home
-              </button>
-            </Link>
-            <Link href="/contact" passHref>
-              <button
-                className={`hover:text-gray-800 ${pathname === "/contact" ? "border-b-2 border-blue-950" : ""}`}
-              >
-                Contact
-              </button>
-            </Link>
-            <Link href="/signin" passHref>
-                <button className="bg-gray-800 text-white py-2 px-4 rounded-lg font-semibold">
-                  Sign in
-                </button>
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="lg:hidden absolute top-16 right-0 bg-white w-48 border rounded-lg text-center">
+              <div className="flex flex-col space-y-4 p-4">
+                <Link href="/" passHref>
+                  <button
+                    className={`hover:text-gray-800 ${pathname === "/" ? "border-b-2 border-blue-950" : ""}`}
+                  >
+                    Home
+                  </button>
+                </Link>
+                <Link href="/contact" passHref>
+                  <button
+                    className={`hover:text-gray-800 ${pathname === "/contact" ? "border-b-2 border-blue-950" : ""}`}
+                  >
+                    Contact
+                  </button>
+                </Link>
+                <Link href="/signin" passHref>
+                  <button className="bg-gray-800 text-white py-2 px-4 rounded-lg font-semibold">
+                    Sign in
+                  </button>
                 </Link>
               </div>
             </div>

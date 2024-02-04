@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Socials() {
   return (
-    <div className="hidden md:flex  fixed bottom-0 w-auto top-1/2 transform -translate-y-1/2 flex-col items-center justify-center z-50">
+    <div className="hidden lg:flex  fixed bottom-0 w-auto top-1/2 transform -translate-y-1/2 flex-col items-center justify-center z-50">
       <a
         href="https://www.whatsapp.com/"
         target="_blank"

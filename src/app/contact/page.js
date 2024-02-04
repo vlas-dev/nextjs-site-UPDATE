@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="w-screen">
       <Navbar />
 
       <Form />

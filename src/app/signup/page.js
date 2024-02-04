@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import ParticlesBackground from "../components/ParticlesBackground";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect } from "react";
 
 export default function SignUp() {
@@ -38,14 +39,16 @@ export default function SignUp() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.1 }}
-          className="mt-4 md:mt-12 mx-auto p-8 bg-white w-4/5 md:w-2/6 rounded-xl z-10"
+          className="mb-20 mx-auto p-8 bg-white w-4/5 lg:w-2/6 rounded-xl z-10"
         >
           <h2 className="text-2xl font-semibold mb-4 text-gray-800 text-center">
             Create your account
           </h2>
           <form onSubmit={handleSignUp}>
             <div className="mb-4">
-              <label className="block text-gray-500 font-medium">Email</label>
+              <label className="block text-gray-500 font-medium mb-1">
+                Email
+              </label>
               <input
                 type="email"
                 className="w-full px-3 py-2 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
@@ -55,7 +58,7 @@ export default function SignUp() {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-500 font-medium">
+              <label className="block text-gray-500 font-medium mb-1">
                 Password
               </label>
               <input
@@ -67,7 +70,7 @@ export default function SignUp() {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-gray-500 font-medium">
+              <label className="block text-gray-500 font-medium mb-1">
                 Confirm Password
               </label>
               <input
@@ -84,6 +87,14 @@ export default function SignUp() {
             >
               Sign Up
             </button>
+            <div className="mt-6 text-center">
+              <p className="text-sm">
+                Already have an account? &nbsp;
+                <Link href="/signin" passHref>
+                  <button className="text-gray-800 hover:text-gray-700 font-medium">Sign in</button> 
+                  </Link>
+              </p>
+            </div>
           </form>
         </motion.div>
       </div>

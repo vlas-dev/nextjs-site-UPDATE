@@ -6,23 +6,23 @@ import { FaWhatsapp, FaInstagram, FaEnvelope } from "react-icons/fa";
 export default function Form() {
   return (
     <div>
-      <div className="relative flex flex-col md:flex-row items-center justify-center text-gray-100 min-h-screen">
+      <div className="relative flex flex-col lg:flex-row items-center justify-center text-gray-100 min-h-screen">
         <ParticlesBackground />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.1 }}
-          className="max-w-lg  mx-auto  md:mr-0"
+          className="max-w-lg  mx-auto  lg:mr-0 mb-10"
         >
-          <motion.p className="text-white text-3xl font-semibold sm:text-4xl hidden md:block">
+          <motion.p className="text-white text-3xl font-semibold sm:text-4xl hidden lg:block">
             Get in touch
           </motion.p>
-          <motion.p className="text-gray-100 pt-4 hidden md:block">
+          <motion.p className="text-gray-100 pt-4 hidden lg:block">
             We&apos;d love to hear from you! If you have any questions or
             feedback, please don&apos;t hesitate to reach out using the form
             below. Our team will get back to you as soon as possible.
           </motion.p>
-          <motion.div className="flex mt-10 mb-3 space-x-4">
+          <motion.div className="flex mt-10 lg:mt-5 mb-3 space-x-4">
             <motion.a
               href="https://whatsapp.com/"
               className="text-gray-500 hover:text-gray-200 z-10"
@@ -48,7 +48,7 @@ export default function Form() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           onSubmit={(e) => e.preventDefault()}
-          className="mt-4 md:mt-12 mx-auto p-8 bg-white w-4/5 md:w-2/6 rounded-xl z-10" 
+          className="lg:mt-4  mx-auto p-8 bg-white w-4/5 lg:w-2/6 rounded-xl z-10 mb-10" 
 
         >
           <h2 className="text-2xl font-semibold mb-4 text-gray-800 text-center">Contact us</h2>

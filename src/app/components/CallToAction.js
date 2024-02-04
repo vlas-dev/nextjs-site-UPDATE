@@ -27,7 +27,7 @@ export default function CallToAction() {
         transition={{ duration: 1, delay: 0.2 }}
         className="absolute inset-0 flex flex-col items-center justify-center"
       >
-        <h2 className="text-3xl font-bold ">Ready to try Synergy?</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold ">Ready to try Synergy?</h2>
         <Link href="/signin" passHref>
           <motion.button
             initial={{ opacity: 0, y: 20 }}
